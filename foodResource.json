@@ -16,7 +16,7 @@ FoodResource
 * WebURL : An array of web addresses for the resource.
 * Email : An array of emails for the resource.
 ** This is the primary email for the resource. Not the same as emails for contacts.
-* Address : An array of addresses.
+* Location : An array of addresses.
 ** Supports multiple addresses and locations with addresses and geocoding
 ** GeoJSON format: http://geojson.org/geojson-spec.html
 ** @TODO Check this is the best way to implement this
@@ -42,7 +42,7 @@ FoodResource
   ],
   "webURL": ["http://hayesvalleyfarm.com"],
   "email": [info@example.com],
-  "address": [
+  "location": [
   {
       "streetAddress": "21 2nd Street",
       "city": "New York",
