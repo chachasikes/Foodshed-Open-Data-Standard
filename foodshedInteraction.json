@@ -18,25 +18,54 @@ http://foodshed.codeforamerica.org/index.php/MetaData/Data_Standards_Projects#Fo
 **Geometry: Lat/Lon | Path | Shape
 **/
 
+// This is an example of a donation of zucchini, passed between three people.
 {
-  "item":"",
+  "item":"Zucchini",
   "ID":"",
-  "type":"",
-  "transit_time":"",
-  "transit_mode":"",
-  "exchangeUnit":"",
+  "type":"donation",
+  "exchangeUnit":"free",
   "route":
-  [
-    { "status":"", },
-    { "carrierName":"", },
-    { "sourceName":"", },
-    { "foodResourceID":"", },
-    { "ID":"", },
-    { "geometry": {
-        "type":"Point", 
-        "coordinates":[97.03125, 39.7265625]
-      },
-    } 
+  [ 
+    {
+      { "status":"departed", },
+      { "carrierName":"Chach", },
+      { "sourceName":"Chach's garden", },
+      { "foodResourceID":"", },
+      { "transitTime":"159000",},
+      { "startTime":"2010-10-20T00:00:00+02:00", }
+      { "endTime":"2010-10-20T00:02:39+02:00", }
+      { "duration" : "159000", }
+      { "transitTime":"0", }
+      { "waitingTime":"0", }
+      { "distance":"145.154004849819", }
+      { "transitMode":"",},
+      { "ID":"", },
+      { "geometry": {
+          "type": "Point", 
+          "coordinates": [97.03125, 39.7265625]
+        },
+      }
+    },
+    {
+      { "status":"in transit", },
+      { "carrierName":"Alan", },
+      { "sourceName":"Chach's garden", },
+      { "foodResourceID":"", },
+//      { "transitTime":"159000",},
+//      { "startTime":"2010-10-20T00:00:00+02:00", }
+//      { "endTime":"2010-10-20T00:02:39+02:00", }
+//      { "duration" : "159000", }
+//      { "transitTime":"0", }
+//      { "waitingTime":"0", }
+//      { "distance":"145.154004849819", }
+      { "transitMode":"",},
+      { "ID":"", },
+      { "geometry": {
+          "type": "Point", 
+          "coordinates": [98.03125, 40.7265625]
+        },
+      }
+    },
   ]
 }
 
