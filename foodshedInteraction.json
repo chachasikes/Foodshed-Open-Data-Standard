@@ -1,0 +1,43 @@
+/**
+FoodInteractionJSON
+http://foodshed.codeforamerica.org/index.php/MetaData/Data_Standards_Projects#FoodInteraction Specification
+
+* Item {What is being interacted with?}
+* ID
+* Type {example: distribution, exchange, purchase, waste pickup }
+* Transit Time {How long it takes for something to get from point to point}
+* Transit Mode {How the item traveled}
+* Exchange Unit {What the item was exchanged for}
+* Route {This item can be repeated to create a path.}
+**Status
+***Start  | Finish
+**CarrierName
+**SourceName
+**FoodResourceID
+**ID
+**Geometry: Lat/Lon | Path | Shape
+**/
+
+{
+  "item":"",
+  "ID":"",
+  "type":"",
+  "transit_time":"",
+  "transit_mode":"",
+  "exchangeUnit":"",
+  "route":
+  [
+    { "status":"", },
+    { "carrierName":"", },
+    { "sourceName":"", },
+    { "foodResourceID":"", },
+    { "ID":"", },
+    { "geometry": {
+        "type":"Point", 
+        "coordinates":[97.03125, 39.7265625]
+      },
+    } 
+  ]
+}
+
+
