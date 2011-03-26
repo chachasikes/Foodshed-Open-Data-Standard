@@ -25,7 +25,7 @@ http://foodshed.codeforamerica.org/index.php/MetaData/Data_Standards_Projects#Fo
   "type":"donation",
   "exchangeUnit":"free",
   "route":
-  [ 
+  [
     {
       { "status":"departed", },
       { "carrierName":"Chach", },
@@ -41,7 +41,7 @@ http://foodshed.codeforamerica.org/index.php/MetaData/Data_Standards_Projects#Fo
       { "transitMode":"",},
       { "ID":"", },
       { "geometry": {
-          "type": "Point", 
+          "type": "Point",
           "coordinates": [97.03125, 39.7265625]
         },
       }
@@ -61,7 +61,7 @@ http://foodshed.codeforamerica.org/index.php/MetaData/Data_Standards_Projects#Fo
       { "transitMode":"",},
       { "ID":"", },
       { "geometry": {
-          "type": "Point", 
+          "type": "Point",
           "coordinates": [98.03125, 40.7265625]
         },
       }
