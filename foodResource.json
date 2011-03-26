@@ -24,8 +24,7 @@ FoodResource
 * Season: When in the calendar year the resource is open to the public.
 * Description : A short description of the resource.
 * Information : Some basic information about the resource.
-* Attributes {Example, Scores. See subtypes}
-
+* Attributes {Example, Scores. See subtypes.}
 */
 
 
@@ -114,7 +113,7 @@ FoodResource
   "attributes": {
     {
       "scores": {
-        "energy_effciency": 10,
+        "energy_efficiency": 10,
         "productivity": 10,
         "waste": 0,
       },
