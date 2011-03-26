@@ -1,5 +1,5 @@
 /**
-FoodItems
+FoodItem
 * This is a description of a mass of physical food items.
 
 * ID: Should be a unique identifier.
@@ -28,7 +28,7 @@ FoodItems
 * Contact: If necessary.
 * Attributes {Example: History. See subtypes.}
 ** @TODO Not sure what the attributes would or should be yet.
-
+*/
 {
   "ID": "",
   "name": "Zucchini",
