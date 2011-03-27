@@ -1,0 +1,73 @@
+// Template for Brooklyn Food Census. 3/26/2011.
+// @TODO make type conform to main OSM formats and style to the special type
+// And then move style to size in attributes.
+{
+  "name": {{jsonize(cells["name"].value)}},
+  "type": {{jsonize(cells["subtype"].value)}},
+  "style":  : {{jsonize(cells["style"].value)}},
+  "keywords": {{jsonize(cells["keywords"].value)}},
+  "phone" : [
+     {
+       "type": {{jsonize(cells["phone_type"].value)}},
+       "number": {{jsonize(cells["phone_number"].value)}}
+     }
+  ],
+  "webURL": [{{jsonize(cells["url"].value)}}],
+  "email": [{{jsonize(cells["email"].value)}}],
+  "location": [
+  {
+      "streetAddress": {{jsonize(cells["street"].value)}},
+      "city": {{jsonize(cells["city"].value)}},
+      "state": {{jsonize(cells["state"].value)}},
+      "postalCode": {{jsonize(cells["zip"].value)}},
+      { "geometry": {
+          "type": "Point",
+          "coordinates": [{{jsonize(cells["latitude"].value)}}, {{jsonize(cells["longitude"].value)}}]
+        },
+      }
+    },
+  ],
+  "contact" : [{
+      "firstName": {{jsonize(cells["first_name"].value)}},
+      "lastName": {{jsonize(cells["last_name"].value)}},
+      "phoneNumbers": [
+         {
+           "type": {{jsonize(cells["phone_type"].value)}},
+           "number": {{jsonize(cells["phone_number"].value)}}
+         }
+      ]}
+  "description": {{jsonize(cells["description"].value)}},
+  "information": {{jsonize(cells["information"].value)}},
+  "attributes": {
+    {
+      "neighborhood": jsonize(cells["neighborhood"].value),
+      "community_district": jsonize(cells["community_district"].value),
+      "accepts_ebt": jsonize(cells["accepts_ebt"].value),
+      "bread" : {{jsonize(cells["bread"].value)}},
+      "bread_whole_wheat" : {{jsonize(cells["bread_whole_wheat"].value)}},
+      "dairy" : {{jsonize(cells["dairy"].value)}},
+      "dairy_low_fat" : {{jsonize(cells["dairy_low_fat"].value)}},
+      "fish_fresh" : {{jsonize(cells["fish_fresh"].value)}},
+      "fish_sustainably_caught" : {{jsonize(cells["fish_sustainably_caught"].value)}},
+      "fresh_produce" : {{jsonize(cells["fresh_produce"].value)}},
+      "fruit" : {{jsonize(cells["fruit"].value)}},
+      "greens" : {{jsonize(cells["greens"].value)}},
+      "health_natural" : {{jsonize(cells["health_natural"].value)}},
+      "herbs" : {{jsonize(cells["herbs"].value)}},
+      "juices_natural" : {{jsonize(cells["juices_natural"].value)}},
+      "local_food" : {{jsonize(cells["local_food"].value)}},
+      "meat_deli" : {{jsonize(cells["meat_deli"].value)}},
+      "meat_free_range" : {{jsonize(cells["meat_free_range"].value)}},
+      "meat_low_fat" : {{jsonize(cells["meat_low_fat"].value)}},
+      "meat_packaged" : {{jsonize(cells["meat_packaged"].value)}},
+      "organics" : {{jsonize(cells["organics"].value)}},
+      "prepared_food" : {{jsonize(cells["prepared_food"].value)}},
+      "star_bodega" : {{jsonize(cells["star_bodega"].value)}},
+      "vegetables" : {{jsonize(cells["vegetables"].value)}},
+      "other" : {{jsonize(cells["other"].value)}},
+      "surveyor" : {{jsonize(cells["surveyor"].value)}},
+      "added" : {{jsonize(cells["added"].value)}},
+      "surveyed" : {{jsonize(cells["surveyed"].value)}},
+    }
+  },
+}
