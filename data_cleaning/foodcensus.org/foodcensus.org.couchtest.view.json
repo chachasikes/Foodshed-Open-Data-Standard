@@ -1,0 +1,13 @@
+{
+  "_id":"_design/foodshed",
+  "language": "javascript",
+  "views":
+  {
+    "all": {
+      "map": "function(doc) { emit(null, doc) }"
+    },
+    "neighborhood": {
+      "map": "function(doc) {if (doc.name == 'CVS') emit(null, doc) }"
+    },
+  }
+}

@@ -1,0 +1,71 @@
+# food_resource.txt
+
+## About
+This is a description of a source of supply for an element in the food system.
+This could be a community garden, urban farm, a grocery store, a community kitchen.
+
+
+## Format
+Field Name
+Details
+
+## Fields
+
+resource_id
+Optional. A source of supply for an element in the food system. Should be a unique ID.
+
+resource_name
+Required. The name of the resource.
+
+resource_description
+Optional. Description of the resource.
+
+resource_type
+Optional. A type description of the resource. Standard types exist for certain kinds of resources. Refer to [@TODO] list.
+
+resource_style
+Optional. A style description of the resource. Standard styles exist for certain kinds of resources. Refer to [@TODO] list.
+
+resource_url
+Optional. Link to the resource.
+Optional. The value must be a fully qualified URL that includes http:// or https://,
+and any special characters in the URL must be correctly escaped.
+See http://www.w3.org/Addressing/URL/4_URI_Recommentations.html for a description
+of how to create fully qualified URL values.
+
+resource_keywords
+Optional. A string of comma separated keywords. Should be enclosed by double quotes.
+
+resource_location
+Optional. Look to the JSON standard and provide a serialized array for this field.
+@TODO The location field is tricky to represent as a single column. Should be
+generic for multiple countries, multiple locations, and provide address, lat/lon or WKT data.
+
+resource_email
+Optional. Email of the resource.
+
+resource_contact
+Optional. Name of person who is point of contact for the resource.
+
+resource_phone
+Optional. Phone number of the resource.
+@TODO It would really be better if these had types and could be unlimited (like in the JSON standard.)
+
+resource_attributes
+Optional. A serialized array of attributes.
+
+# resource_hours
+# Optional.
+@TODO If we roll farmer's markets in this (vs. food events) we would need to have a 
+better time description and make the time & location data match up better. 
+Or, the Farmer's Market could be a resource, and its hours could be an event with independent locations.
+Reason being, there are some food distributions with multiple locations (or there will be.)
+
+# resource_calendar
+# Optional.
+@TODO Goes with the hours.
+
+
+### Attribution
+# This standard builds upon the General Transit Feed, the Atom RSS feed standard and others.
+

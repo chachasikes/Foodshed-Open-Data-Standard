@@ -40,7 +40,7 @@ FoodResource
        "number": "803 555-2121"
      }
   ],
-  "webURL": ["http://hayesvalleyfarm.com"],
+  "url": ["http://hayesvalleyfarm.com"],
   "email": [info@example.com],
   "location": [
   {
