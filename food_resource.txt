@@ -56,8 +56,8 @@ Optional. A serialized array of attributes.
 
 # resource_hours
 # Optional.
-@TODO If we roll farmer's markets in this (vs. food events) we would need to have a 
-better time description and make the time & location data match up better. 
+@TODO If we roll farmer's markets in this (vs. food events) we would need to have a
+better time description and make the time & location data match up better.
 Or, the Farmer's Market could be a resource, and its hours could be an event with independent locations.
 Reason being, there are some food distributions with multiple locations (or there will be.)
 
