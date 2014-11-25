@@ -1,9 +1,9 @@
 ==Open Standard for Foodshed Data==
 We are building an Open Standard for Foodshed Data.
 
-We need this to help normalize data that we are displaying, 
-sharing and contributing. This is a draft specification and we are 
-looking for advice from people who work with these different datasets 
+We need this to help normalize data that we are displaying,
+sharing and contributing. This is a draft specification and we are
+looking for advice from people who work with these different datasets
 on a regular basis to help inform the standard.
 
 ===Versions===
